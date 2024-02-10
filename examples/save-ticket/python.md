@@ -23,12 +23,9 @@ response = requests.post(url, data=json.dumps(data), headers=headers)
 
 try:
     response.raise_for_status()
-    # Success
     print(response.json())
 except requests.exceptions.HTTPError as err:
-    # HTTP error occurred
     print(err)
 except Exception as err:
-    # Other error occurred
     print(err)
 ```
