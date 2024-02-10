@@ -14,7 +14,7 @@ headers = {
 response = requests.delete(f'https://api.publicbacklog.com/v1/tickets/delete-ticket?id={id}', headers=headers)
 
 try:
-    print('delete success', response.json())
+    print(response.json())
 except Exception as err:
     print(err)
 ```

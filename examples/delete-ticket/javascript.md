@@ -15,7 +15,7 @@ const headers = {
 
 axios.delete(`https://api.publicbacklog.com/v1/tickets/delete-ticket?id=${id}`, headers)
     .then(data => {
-        console.log('delete success', data.data);
+        console.log(data.data);
     })
     .catch(err => { 
         console.error(err) 

@@ -98,10 +98,10 @@ This is probably the main endpoint set you'll be using. These endpoints control 
 <!-- tabs:start -->
 #### **Javascript**
 
-[javascript](examples/get-ticket/javascript.md ':include')
+[javascript](examples/delete-ticket/javascript.md ':include')
 
 #### **Python**
 
-[python](examples/get-ticket/python.md ':include')
+[python](examples/delete-ticket/python.md ':include')
 
 <!-- tabs:end -->
