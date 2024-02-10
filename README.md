@@ -24,6 +24,17 @@ This is probably the main endpoint set you'll be using. These endpoints control 
 | ticketTypeId | integer | No       | The ticket type id.<br/>This will default to `1` for `Request`                                                                                     |
 | comment      | string  | No       | A comment to add additional information not necessarily a part of the description of the request/bug                                                                              |
 
+<!-- tabs:start -->
+#### **Javascript**
+
+[examples](examples/save-ticket/javascript.md ':include')
+
+#### **Python**
+
+[examples](examples/save-ticket/python.md ':include')
+
+<!-- tabs:end -->
+
 #### Get Ticket
 
 ```http
