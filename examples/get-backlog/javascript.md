@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const apiKey='your-api-key';
 
-const id = 1;
+const backlogName = 'your-backlog-name';
 
 const headers = {
     headers: {
@@ -13,11 +13,10 @@ const headers = {
     }
 };
 
-axios.post(`https://api.publicbacklog.com/v1/tickets/get-ticket?id=${id}`, headers)
-    .then(response=> {
+axios.get(`https://api.publicbacklog.com/v1/backlogs/get-backlog?backlogName=${backlogName}`, headers)
+    .then(response => {
         console.log(response.data);
-    })
-    .catch(error=> {
-        console.error(error);
+    }).catch(err => {
+        console.error(err);
     });
 ```

@@ -16,6 +16,7 @@ This is probably the main endpoint set you'll be using. These endpoints control 
   POST /v1/tickets/save-ticket
 ```
 
+
 | Parameter    | Type    | Required | Description                                                                                             |
 | :----------- | :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | title        | string  | ```Yes```      | The title field. <br />Minimum of 3 characters<br />Maximum of 250 characters                                                      |
@@ -104,4 +105,55 @@ This is probably the main endpoint set you'll be using. These endpoints control 
 
 [python](examples/delete-ticket/python.md ':include')
 
+<!-- tabs:end -->
+
+
+### Organization
+
+#### Get Organization
+
+
+This endpoint will allow you to get the organization that owns this API key
+
+| Parameter | Type    | Required | Description                                 |
+| :-------- | :------ | :------- | :------------------------------------------ |
+| apiKey    | string  | ```Yes```      | The API key required for authentication.    |
+
+
+<!-- tabs:start -->
+#### **Javascript**
+
+[javascript](examples/get-organization/javascript.md ':include')
+
+#### **Python**
+
+[python](examples/get-organization/python.md ':include')
+<!-- tabs:end -->
+
+
+### Backlog
+
+#### Get Backlog
+
+```http
+  GET /v1/backlogs/get-backlog?backlogName=${backlogName}
+  GET /v1/backlogs/get-backlog?backlogId=${backlogId}
+```
+
+This endpoint allows you to retrieve details about a specific backlog by either `backlogName` or `backlogId`.
+
+| Parameter    | Type    | Required | Description                                 |
+| :----------- | :------ | :------- | :------------------------------------------ |
+| backlogName  | string  | ```Either```       | The name of the backlog.                    |
+| backlogId    | integer | ```Either```       | The unique identifier for the backlog.      |
+
+
+<!-- tabs:start -->
+#### **Javascript**
+
+[javascript](examples/get-backlog/javascript.md ':include')
+
+#### **Python**
+
+[python](examples/get-backlog/python.md ':include')
 <!-- tabs:end -->

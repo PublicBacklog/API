@@ -3,8 +3,6 @@ const axios = require('axios');
 
 const apiKey='your-api-key';
 
-const id = 1;
-
 const headers = {
     headers: {
         'Accept': 'application/json',
@@ -13,11 +11,11 @@ const headers = {
     }
 };
 
-axios.post(`https://api.publicbacklog.com/v1/tickets/get-ticket?id=${id}`, headers)
-    .then(response=> {
+
+axios.get('http://localhost:5000/v1/organizations/get-organization', headers)
+    .then(response => {
         console.log(response.data);
-    })
-    .catch(error=> {
-        console.error(error);
+    }).catch(err => {
+        console.error(err);
     });
 ```
