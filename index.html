@@ -13,14 +13,96 @@
       --docsifytabs-border-color: #ededed;
       --docsifytabs-tab-highlight-color: rgb(0, 45, 128);
     }
+
+    .a-logo {
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+
+    .h2-logo {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-family: Nunito, sans-serif;
+      --tw-bg-opacity: 1;
+      text-align: center;
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #eff0fe;
+      margin: 0;
+      height: 2.5rem;
+      max-height: 2.5rem;
+      overflow: hidden;
+      padding-top: .25rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 600;
+      --tw-text-opacity: 1;
+      color: rgb(239 240 254 / var(--tw-text-opacity));
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+
+    .img-logo {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-family: Nunito, sans-serif;
+      --tw-bg-opacity: 1;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 600;
+      --tw-text-opacity: 1;
+      color: rgb(239 240 254 / var(--tw-text-opacity));
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #eff0fe;
+      vertical-align: middle;
+      max-width: 100%;
+      margin-top: -.25rem;
+      display: inline-block;
+      height: 2.5rem;
+      margin-right: .5rem;
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+
+    .text-logo {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      --tw-bg-opacity: 1;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 600;
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #eff0fe;
+      font-family: Nunito, sans-serif;
+      --tw-text-opacity: 1;
+      color: rgb(30 31 72 / var(--tw-text-opacity));
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&amp;display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      // name: 'PublicBacklog',
+      // name: 'Public Backlog',
+      loadSidebar: true,
+      // logo: '/assets/white_bg_pb_logo.svg',
       // repo: 'API'
       tabs: {
         persist: true,      // default
@@ -28,7 +110,7 @@
         theme: 'classic', // default
         tabComments: true,      // default
         tabHeadings: true       // default
-      }
+      },
     }
   </script>
 
