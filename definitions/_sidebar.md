@@ -8,9 +8,24 @@
     </h2>
 </a>
 
+
 <div style="margin-top:1.5rem; padding-left:2rem;">
 
-#### [API](/api/?id=public-backlog-api-documentation)
-#### [Definitions](/definitions/)
+
+<span stlye="">
+  <a href="/">
+    <i class="material-icons-two-tone" style="font-size: 12px;" >
+      arrow_back_ios
+    </i>
+    back
+  </a>
+</span>
+
+**Type Definitions**
+- [Ticket](/definitions/?id=ticket-types.md)
+- [Statuses](/definitions/?id=ticket-statuses.md)
+  -  [Bugs](/definitions/?id=bug-statuses.md)
+  -  [Requests](/definitions/?id=request-statuses.md)
+
 
 </div>
