@@ -9,10 +9,16 @@
 </a>
 
 <div style="margin-top:1.5rem; padding-left:2rem;">
+<span stlye="">
+  <a href="/">
+    <i class="material-icons-two-tone" style="font-size: 12px;" >
+      arrow_back_ios
+    </i>
+    back
+  </a>
+</span>
 
-#### [Quick Start easy](/quick-start-easy/)
-#### [API](/api/?id=public-backlog-api-documentation)
-#### [Type Definitions](/definitions/)
-#### [Organization Users](/organization-users/)
+#### [Introduction](/organization-users/)
+
 
 </div>

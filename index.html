@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>PublicBacklog Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -92,6 +92,17 @@
       text-decoration: none !important;
       border-bottom: none !important;
     }
+
+    .pb-warning {
+      display: flex;
+      align-items: center;
+      background-color: #fffbeb;
+      border-left: 4px solid #fbbf24;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
+      color: #92400e;
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&amp;display=swap" rel="stylesheet" />
   <link rel="icon" type="image" href="/assets/favicon.ico" />
@@ -109,7 +120,8 @@
       alias: {
         '/.api': '/api/_sidebar.md',
         '/.definitions': '/definitions/_sidebar.md',
-        // '/': '/_sidebar.md' // Default to API sidebar
+        '/.organization-users': '/organization-users/_sidebar.md',
+        '/.quick-start-easy': '/quick-start-easy/_sidebar.md',
       },
       // logo: '/assets/white_bg_pb_logo.svg',
       // repo: 'API'
