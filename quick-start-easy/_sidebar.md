@@ -18,7 +18,10 @@
   </a>
 </span>
 
-#### [Introduction](/quick-start-easy/)
+**Quick Start Easy Setup**
+  - [Introduction](/quick-start-easy/?id=quick-installation-guide)
+  - [Step 1](/quick-start-easy/?id=first-things-first)
+  - [Conclusion](/quick-start-easy/?id=that39s-it)
 
 
 

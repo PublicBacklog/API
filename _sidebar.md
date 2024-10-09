@@ -10,9 +10,21 @@
 
 <div style="margin-top:1.5rem; padding-left:2rem;">
 
-#### [Quick Start easy](/quick-start-easy/)
-#### [API](/api/?id=public-backlog-api-documentation)
-#### [Type Definitions](/definitions/)
-#### [Organization Users](/organization-users/)
+**Quick Start**
+  - [Quick Start easy](/quick-start-easy/)
+**Developers**
+  - [API](/api/?id=public-backlog-api-documentation)
+  - [Type Definitions](/definitions/)
+**Integrations**
+  - [Github](/github/)
+  - [Jira](/jira/)
+  - [Asana](/asana/)
+**Knowledge Center**
+  - [Organizations](/organization/)
+  - [Organization Users](/organization-users/)
+  - [Backlogs](/backlogs/)
+  - [Roadmaps](/roadmaps/)
+  - [Announcements](/announcements/)
+  - [Notifications](/notifications/)
 
 </div>
