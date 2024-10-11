@@ -12,15 +12,16 @@
 
 **Quick Start**
   - [Quick Start easy](/quick-start-easy/)
-**Developers**
-  - [API](/api/?id=public-backlog-api-documentation)
+**API**
+  - [API Key](/api-key/)
+  - [Endpoints](/api/?id=public-backlog-api-documentation)
   - [Type Definitions](/definitions/)
 **Integrations**
   - [Github](/github/)
   - [Jira](/jira/)
   - [Asana](/asana/)
 **Knowledge Center**
-  - [Organizations](/organization/)
+  - [Organizations](/organizations/)
   - [Organization Users](/organization-users/)
   - [Backlogs](/backlogs/)
   - [Roadmaps](/roadmaps/)

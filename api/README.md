@@ -2,22 +2,6 @@
 
 These are the docs for our API which you can access at https://api.publicbacklog.com
 
-### Generating API Key
-
-The generation of API keys is a straightforward procedure. The only thing to note is once we show it to you upon generator once you exit the page you will be unable to view the key again. So make sure to note it down immediately. 
-
-![1728447506363](image/README/1728447506363.png)
-
-![1728447518063](image/README/1728447518063.png)
-
-If you need to change your API key for whatever reason the process is almost identical, navigate to the API Configuration in your Organization Settings and click Generate New Api Key. 
-
-**This change will immediately invalidate the previously active API key.**
-
-![1728447623161](image/README/1728447623161.png)
-
-![1728447630246](image/README/1728447630246.png)
-
 ### Authorization
 
 The API authenticates via an ``apiKey`` parameter which you can find under your organization settings.
@@ -34,13 +18,13 @@ This is probably the main endpoint set you'll be using. These endpoints control 
   POST /v1/tickets/save-ticket
 ```
 
-| Parameter    | Type    | Required | Description                                                                                                                                              |
-| :----------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title        | string  | ``Yes``  | The title field.<br />Minimum of 3 characters<br />Maximum of 250 characters                                                                             |
+| Parameter    | Type    | Required | Description                                                                                                                                       |
+| :----------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| title        | string  | ``Yes``  | The title field.<br />Minimum of 3 characters<br />Maximum of 250 characters                                                                      |
 | description  | string  | ``Yes``  | The description of the ticket. This can be either regular text or Html formatted rich text.``Minimum 3 characters<br />Maximum 3000000 characters |
-| statusId     | integer | No       | The status id of the ticket. This can be any of the Request Status ids or any Bug Status ids.                                                            |
+| statusId     | integer | No       | The status id of the ticket. This can be any of the Request Status ids or any Bug Status ids.                                                     |
 | ticketTypeId | integer | No       | The ticket type id.``This will default to `1` for `Request`                                                                                   |
-| comment      | string  | No       | A comment to add additional information not necessarily a part of the description of the request/bug                                                     |
+| comment      | string  | No       | A comment to add additional information not necessarily a part of the description of the request/bug                                              |
 
 <!-- tabs:start -->
 
@@ -78,14 +62,14 @@ This is probably the main endpoint set you'll be using. These endpoints control 
 
 #### Update Ticket
 
-| Parameter    | Type    | Required | Description                                                                                                                                              |
-| :----------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id           | integer | ``Yes``  | The id of the ticket to update                                                                                                                          |
-| title        | string  | No       | The title field.<br />Minimum of 3 characters<br />Maximum of 250 characters                                                                             |
+| Parameter    | Type    | Required | Description                                                                                                                                       |
+| :----------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id           | integer | ``Yes``  | The id of the ticket to update                                                                                                                   |
+| title        | string  | No       | The title field.<br />Minimum of 3 characters<br />Maximum of 250 characters                                                                      |
 | description  | string  | No       | The description of the ticket. This can be either regular text or Html formatted rich text.``Minimum 3 characters<br />Maximum 3000000 characters |
-| statusId     | integer | No       | The status id of the ticket. This can be any of the Request Status ids or any Bug Status ids.                                                            |
-| ticketTypeId | integer | No       | The ticket type id.                                                                                                                                      |
-| comment      | string  | No       | A comment to add additional information not necessarily a part of the description of the request/bug                                                     |
+| statusId     | integer | No       | The status id of the ticket. This can be any of the Request Status ids or any Bug Status ids.                                                     |
+| ticketTypeId | integer | No       | The ticket type id.                                                                                                                               |
+| comment      | string  | No       | A comment to add additional information not necessarily a part of the description of the request/bug                                              |
 
 ```http
   PATCH /v1/tickets/update-ticket
