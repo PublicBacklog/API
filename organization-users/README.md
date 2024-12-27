@@ -12,7 +12,7 @@ Admins have full access to the admin section, approving tickets, modifying roadm
 
 #### Public Backlogs
 
-By default users are able to join any public backlog so long as it has user space left.
+By default a user is able to join a public backlog without any interaction from an admin.
 
 #### Private Backlogs
 
@@ -33,7 +33,7 @@ Start by clicking the Download button.
 
 ![1728261282089](image/README/1728261282089.png)
 
-You may also download it from [here]()
+You may also download it from [here](https://api.publicbacklog.com/files/user-template)
 
 Please populate this with the users that you wish to allow access to give feedback on any backlog in the organization.
 
@@ -51,9 +51,11 @@ Beyond that they are locked out of the admin portion
 
 #### With the &nbsp; [Advanced Setup]()
 
-With the advanced setup we give you more flexability with users to ensure users you want giving feedback are able to do so.
+The Advanced setup gives you the most felxability in terms of setting up users who you want to give feedback. This method does require a higher degree of code integration and testing on your part. But if a private Backlog is the route you want to take this is the best way to do that.
 
-*Coming soon...*
+We do offer an api endpoint to add an organization user. This endpoint is only capable of adding a rengular user **not** an admin. Adding a user through this endpoint will immediately allow them to start interacting with your private Backlogs on redirect.
+
+You can explore the endpoint documentation [here](/api/?id=add-organization-user)
 
 #### Adding an adiminstrator
 

@@ -16,16 +16,16 @@
   - [API Key](/api-key/)
   - [Endpoints](/api/?id=public-backlog-api-documentation)
   - [Type Definitions](/definitions/)
-**Integrations**
-  - [Github](/github/)
-  - [Jira](/jira/)
-  - [Asana](/asana/)
 **Knowledge Center**
   - [Organizations](/organizations/)
   - [Organization Users](/organization-users/)
   - [Backlogs](/backlogs/)
+  - [Tickets](/tickets/)
   - [Roadmaps](/roadmaps/)
   - [Announcements](/announcements/)
   - [Notifications](/notifications/)
-
+**Integrations**
+  - [Github](/github/)
+  - [Jira](/jira/)
+  - [Asana](/asana/)
 </div>

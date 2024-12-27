@@ -9,7 +9,7 @@ headers = {
     'apikey': api_key
 }
 
-response = requests.get('http://localhost:5000/v1/organizations/get-organization', headers=headers)
+response = requests.get('https://api.publicbacklog.com/v1/organizations/get-organization', headers=headers)
 
 try:
     print(response.json())

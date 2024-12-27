@@ -21,18 +21,6 @@
   </a>
 </span>
 
-**Authorization**
-- [How it works](/api/?id=authorization.md)
 **Tickets**
-- [Save New Ticket](/api/?id=save-new-ticket.md)
-- [Get Ticket](/api/?id=get-ticket.md)
-- [Update Ticket](/api/?id=update-ticket.md)
-- [Delete Ticket](/api/?id=delete-ticket.md)
-**Organization**
-- [Get Organization](/api/?id=get-organization.md)
-**Organization Users**
-- [Add Organization User](/api/?id=add-organization-user)
-**Backlog**
-- [Get Backlog](/api/?id=get-backlog.md)
-
-</div>
+ - [What is a ticket?](/tickets/?id=what-is-a-ticket)
+ </div>

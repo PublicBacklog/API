@@ -32,7 +32,9 @@ Once you've successfully joined an Organization through the join functionality y
 
 ### Delete Organization
 
-An Organization can only be deleted by the Organization owner. This is a security measure to ensure that an action such as this which is irreversible can only be undertaken by the appropriate people.
+The ability to delete an Organization is exclusively reserved for the Organization owner. This is a security measure ensuring that such a consequential action can only be executed by the appropriate individuals.
+
+It not possible to un-delete an Organization once it's been completed on your own. The Organization and all accompanying data will be kept in our database for 30 days after deletion. After which it will be permanently deleted. During this period you are able to email [support@publicbacklog.com]() to get your organization reinstated.
 
 ### Billing
 

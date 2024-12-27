@@ -4,9 +4,11 @@ These are the docs for our API which you can access at https://api.publicbacklog
 
 ### Authorization
 
-The API authenticates via an ``apiKey`` parameter which you can find under your organization settings.
+The API authenticates via an ``apiKey`` parameter which you can find under your organization settings. An apiKey is tied directly to your [Organization]() and can access and [Backlog]() that the [Organization]() owns.
 
-This can be passed in via the ``headers``, ``query``, or ``body`` of your requests.
+If you haven't yet generated an API key you can visit [this link]() to learn how to set that up.
+
+This can be passed in via the ``headers`` of your requests.
 
 ### Tickets
 
@@ -131,13 +133,38 @@ This endpoint will allow you to get the organization that owns this API key
 
 <!-- tabs:end -->
 
+### Organization User
+
+#### Add Organization User
+
+This endpoint will allow you to get the organization that owns this API key
+
+| Parameter | Type   | Required | Description                              |
+| :-------- | :----- | :------- | :--------------------------------------- |
+| apiKey    | string | ``Yes``  | The API key required for authentication. |
+| email     | string  | ``Yes`` | The email for the organization user you wish to add |
+| firstName | string | ``Yes``  | Users first name                          |
+| lastName  | string | No       | Users last name                           |
+
+
+<!-- tabs:start -->
+
+#### **Javascript**
+
+[javascript](examples/add-organization-user/javascript.md ":include")
+
+#### **Python**
+
+[python](examples/add-organization-user/python.md ":include")
+
+<!-- tabs:end -->
+
 ### Backlog
 
 #### Get Backlog
 
 ```http
   GET /v1/backlogs/get-backlog?backlogName=${backlogName}
-  GET /v1/backlogs/get-backlog?backlogId=${backlogId}
 ```
 
 This endpoint allows you to retrieve details about a specific backlog by either `backlogName` or `backlogId`.
@@ -145,7 +172,6 @@ This endpoint allows you to retrieve details about a specific backlog by either 
 | Parameter   | Type    | Required   | Description                            |
 | :---------- | :------ | :--------- | :------------------------------------- |
 | backlogName | string  | ``Either`` | The name of the backlog.               |
-| backlogId   | integer | ``Either`` | The unique identifier for the backlog. |
 
 <!-- tabs:start -->
 

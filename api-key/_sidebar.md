@@ -22,8 +22,8 @@
 </span>
 
 **API Key**
-- [Generate a New Key](/definitions/?id=generating-api-key.md)
-- [Regenerating Your Key](/definitions/?id=regenerating-your-api-key)
+- [Generate a New Key](/api-key/?id=generating-api-key)
+- [Regenerating Your Key](/api-key/?id=regenerating-your-api-key)
 
 
 </div>

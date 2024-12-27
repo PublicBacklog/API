@@ -12,7 +12,7 @@ const headers = {
 };
 
 
-axios.get('http://localhost:5000/v1/organizations/get-organization', headers)
+axios.get('https://api.publicbacklog.com/v1/organizations/get-organization', headers)
     .then(response => {
         console.log(response.data);
     }).catch(err => {

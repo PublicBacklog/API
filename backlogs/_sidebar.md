@@ -10,8 +10,6 @@
 
 
 <div style="margin-top:1.5rem; padding-left:2rem;">
-
-
 <span stlye="">
   <a href="/">
     <i class="material-icons-two-tone" style="font-size: 12px;" >
@@ -25,5 +23,5 @@
 - [What is an Backlog?](/backlogs/?id=backlogs)
 - [Privacy](/backlogs/?id=privacy)
 - [Create Backlog](/backlogs/?id=create-backlog)
-- [Delete Backlog](/backlogs/id=delete-backlog)
+- [Deactivate Backlog](/backlogs/?id=deactivate-backlog)
 </div>

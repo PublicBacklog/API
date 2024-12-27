@@ -10,8 +10,6 @@
 
 
 <div style="margin-top:1.5rem; padding-left:2rem;">
-
-
 <span stlye="">
   <a href="/">
     <i class="material-icons-two-tone" style="font-size: 12px;" >
@@ -21,18 +19,10 @@
   </a>
 </span>
 
-**Authorization**
-- [How it works](/api/?id=authorization.md)
-**Tickets**
-- [Save New Ticket](/api/?id=save-new-ticket.md)
-- [Get Ticket](/api/?id=get-ticket.md)
-- [Update Ticket](/api/?id=update-ticket.md)
-- [Delete Ticket](/api/?id=delete-ticket.md)
-**Organization**
-- [Get Organization](/api/?id=get-organization.md)
-**Organization Users**
-- [Add Organization User](/api/?id=add-organization-user)
-**Backlog**
-- [Get Backlog](/api/?id=get-backlog.md)
-
+**Backlogs**
+- [Installation](/backlogs/?id=backlogs)
+- [Selecting your Repo](/backlogs/?id=privacy)
+- [Getting your Tickets to Github](/github/)
+- [Syncing with PublicBacklog](/github/)
+- [Uninstallation](/backlogs/?id=create-backlog)
 </div>

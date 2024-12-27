@@ -16,6 +16,7 @@ This code will need to be added somewhere on your website. This will automatical
         email: "test@test.com",
         name: "test test",
         organizationName: "PublicBacklog",
+        backlogName: "Website",
       });
 </script>
 ```
