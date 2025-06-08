@@ -4,15 +4,16 @@ These are the docs for our API which you can access at https://api.publicbacklog
 
 ### Authorization
 
-The API authenticates via an ``apiKey`` parameter which you can find under your organization settings. An apiKey is tied directly to your [Organization]() and can access and [Backlog]() that the [Organization]() owns.
+The API uses an `apiKey` for authentication, found in your [Organization]() settings. An `apiKey` is tied to your Organization and grants access to any [Backlog]() it owns.
 
-If you haven't yet generated an API key you can visit [this link]() to learn how to set that up.
+If you haven’t generated an API key yet, follow [this link]() for setup instructions.
 
-This can be passed in via the ``headers`` of your requests.
+Pass the key in the `headers` of your requests.
+
 
 ### Tickets
 
-This is probably the main endpoint set you'll be using. These endpoints control the CRUD operations for backlog tickets.
+These are the primary endpoints for managing Backlog tickets. They handle all CRUD operations.
 
 #### Save New ticket
 
@@ -25,7 +26,7 @@ This is probably the main endpoint set you'll be using. These endpoints control 
 | title        | string  | ``Yes``  | The title field.<br />Minimum of 3 characters<br />Maximum of 250 characters                                                                      |
 | description  | string  | ``Yes``  | The description of the ticket. This can be either regular text or Html formatted rich text.``Minimum 3 characters<br />Maximum 3000000 characters |
 | statusId     | integer | No       | The status id of the ticket. This can be any of the Request Status ids or any Bug Status ids.                                                     |
-| ticketTypeId | integer | No       | The ticket type id.``This will default to `1` for `Request`                                                                                   |
+| ticketTypeId | integer | No       | The ticket type id.``This will default to `1` for `Request`                                                                                       |
 | comment      | string  | No       | A comment to add additional information not necessarily a part of the description of the request/bug                                              |
 
 <!-- tabs:start -->
@@ -46,8 +47,8 @@ This is probably the main endpoint set you'll be using. These endpoints control 
   GET /v1/tickets/get-ticket?id=${id}
 ```
 
-| Parameter | Type    | Required | Description                       |
-| :-------- | :------ | :------- | :-------------------------------- |
+| Parameter | Type    | Required | Description                      |
+| :-------- | :------ | :------- | :------------------------------- |
 | id        | integer | ``Yes``  | The id of the ticket to retrieve |
 
 <!-- tabs:start -->
@@ -66,7 +67,7 @@ This is probably the main endpoint set you'll be using. These endpoints control 
 
 | Parameter    | Type    | Required | Description                                                                                                                                       |
 | :----------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id           | integer | ``Yes``  | The id of the ticket to update                                                                                                                   |
+| id           | integer | ``Yes``  | The id of the ticket to update                                                                                                                    |
 | title        | string  | No       | The title field.<br />Minimum of 3 characters<br />Maximum of 250 characters                                                                      |
 | description  | string  | No       | The description of the ticket. This can be either regular text or Html formatted rich text.``Minimum 3 characters<br />Maximum 3000000 characters |
 | statusId     | integer | No       | The status id of the ticket. This can be any of the Request Status ids or any Bug Status ids.                                                     |
@@ -95,8 +96,8 @@ This is probably the main endpoint set you'll be using. These endpoints control 
   DELETE /v1/tickets/delete-ticket?id=${id}
 ```
 
-| Parameter | Type    | Required | Description                     |
-| :-------- | :------ | :------- | :------------------------------ |
+| Parameter | Type    | Required | Description                    |
+| :-------- | :------ | :------- | :----------------------------- |
 | id        | integer | ``Yes``  | The id of the ticket to delete |
 
 <!-- tabs:start -->
@@ -137,14 +138,14 @@ This endpoint will allow you to get the organization that owns this API key
 
 #### Add Organization User
 
-This endpoint will allow you to get the organization that owns this API key
+This endpoint retrieves the Organization associated with the provided API key.
 
-| Parameter | Type   | Required | Description                              |
-| :-------- | :----- | :------- | :--------------------------------------- |
-| apiKey    | string | ``Yes``  | The API key required for authentication. |
-| email     | string  | ``Yes`` | The email for the organization user you wish to add |
-| firstName | string | ``Yes``  | Users first name                          |
-| lastName  | string | No       | Users last name                           |
+| Parameter | Type   | Required | Description                                         |
+| :-------- | :----- | :------- | :-------------------------------------------------- |
+| apiKey    | string | ``Yes``  | The API key required for authentication.            |
+| email     | string | ``Yes``  | The email for the organization user you wish to add |
+| firstName | string | ``Yes``  | Users first name                                    |
+| lastName  | string | No       | Users last name                                     |
 
 
 <!-- tabs:start -->
@@ -167,11 +168,11 @@ This endpoint will allow you to get the organization that owns this API key
   GET /v1/backlogs/get-backlog?backlogName=${backlogName}
 ```
 
-This endpoint allows you to retrieve details about a specific backlog by either `backlogName` or `backlogId`.
+This endpoint retrieves details about a specific Backlog using the `backlogName`
 
-| Parameter   | Type    | Required   | Description                            |
-| :---------- | :------ | :--------- | :------------------------------------- |
-| backlogName | string  | ``Either`` | The name of the backlog.               |
+| Parameter   | Type   | Required   | Description              |
+| :---------- | :----- | :--------- | :----------------------- |
+| backlogName | string | ``Either`` | The name of the backlog. |
 
 <!-- tabs:start -->
 

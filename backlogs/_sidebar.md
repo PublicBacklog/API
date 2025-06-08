@@ -21,6 +21,7 @@
 
 **Backlogs**
 - [What is an Backlog?](/backlogs/?id=backlogs)
+- [General Information](/backlogs/?id=general-information)
 - [Privacy](/backlogs/?id=privacy)
 - [Create Backlog](/backlogs/?id=create-backlog)
 - [Deactivate Backlog](/backlogs/?id=deactivate-backlog)

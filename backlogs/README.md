@@ -1,25 +1,42 @@
 ### Backlogs
 
-A Backlog in PublicBacklog is a place where you can gather specified feedback. Backlogs can be used to represent any number of Organizational products or services. If you want to be as granular as possible you can even break down different sections of a single product into multiple backlogs.
+A Backlog in PublicBacklog is where you collect targeted feedback. Use Backlogs to represent different products, services, or even specific sections of a single product for more granular control.
 
-An Organization is the ultimate owner of a Backlog. The number of Backlogs an Organization can has is determined by it's subscription level. You can find more information on our [Home Page]() regarding how many Backlogs you may have with each subscription.
+
+[Organizations]() own Backlogs. 
+
+The **Free** tier allows 1 Backlog, **Starter** allows 3, and both **Business** and **Enterprise** tiers allow unlimited Backlogs.
+
+You can find more information about tier differences on the [Home Page](https://www.publicbacklog.com/)
 
 ### General Information
 
-On the Backlog settings page you'll find a General Information section. This section can be used to change the name of the Backlog. It can also be used to change the description. This description will appear under the main `_feedback` portion of your Backlog when users first visit it.
+In Backlog settings, the General Information section lets you change the Backlog name and description. The description appears under the main `_feedback` section when users visit the `_feedback` page for this Backlog.
+
 
 ### Privacy
 
-Backlogs come with their own individual privacy settings. By default a Backlog is created with the privacy set to **Public**. This can be changed right after Backlog creation on the settings page that you are immediately redirected to upon Backlog creation.
+Each Backlog has its own privacy settings. By default, a Backlog is set to **Public**. You can change this immediately after creation on the settings page you’re redirected to.
+
 
 ### Create Backlog
 
-Adding a Backlog is the first step in collecting user feedback
+Adding a Backlog is the first step in collecting user feedback.
 
-To add a new Backlog go to your [Organization Dashboard]() and click on the **Create New Backlog** button
+To create one, go to your [Organization Dashboard]() and click **Create New Backlog**.
 
 ### Deactive Backlog
 
-If you find that a Backlog is no longer needed by your Organization you are able to deactivate any Backlogs you own.
+If a Backlog is no longer needed, you can deactivate it.
 
-To do this navigate to the Backlog settings for the Backlog that you wish to deactivate. At the bottom of the page you will find the red Deactivate button.
+Go to the Backlog settings for the target Backlog. At the bottom of the page, click the red **Deactivate** button.
+
+This immediately blocks user interaction with the Backlog’s feedback and starts a 30-day retention period. After 30 days, all data from the Backlog is permanently deleted.
+
+
+<div class="pb-warning">
+    <i class="material-icons" style="font-size: 24px;">warning</i>
+    <p style="margin-left: 10px;">
+        Since ticket IDs are shared across the Organization, they are <strong>not</strong> renumbered when a Backlog's tickets are removed. This preserves the integrity of bookmarked links.
+   </p> 
+</div>

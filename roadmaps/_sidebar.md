@@ -8,7 +8,10 @@
     </h2>
 </a>
 
+
 <div style="margin-top:1.5rem; padding-left:2rem;">
+
+
 <span stlye="">
   <a href="/">
     <i class="material-icons-two-tone" style="font-size: 12px;" >
@@ -18,13 +21,7 @@
   </a>
 </span>
 
-**Quick Start Easy Setup**
-  - [Introduction](/quick-start-easy/?id=quick-installation-guide)
-  - [Step 1](/quick-start-easy/?id=include-the-sdk)
-  - [Step 2](/quick-start-easy/?id=include-the-sdk)
-  - [Step 3](/quick-start-easy/?id=link-users-to-the-feedback-form)
-  - [Conclusion](/quick-start-easy/?id=that39s-it)
-
-
-
-</div>
+- [What is a Roadmap?](/roadmaps/?id=what-is-a-roadmap)
+- [Creating a Roadmap](/roadmaps/?id=creating-a-roadmap)
+- [Add Ticket to Roadmap](/roadmaps/?id=add-a-ticket-to-a-roadmap)
+- [Remove Ticket from Roadmap](/roadmaps/?id=remove-a-ticker-from-a-roadmap)

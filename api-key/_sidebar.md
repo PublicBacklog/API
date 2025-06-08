@@ -24,6 +24,7 @@
 **API Key**
 - [Generate a New Key](/api-key/?id=generating-api-key)
 - [Regenerating Your Key](/api-key/?id=regenerating-your-api-key)
+- [Examples](/api-key/?id=examples)
 
 
 </div>

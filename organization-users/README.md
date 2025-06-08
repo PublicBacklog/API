@@ -1,88 +1,94 @@
 ## PublicBacklog Organization Users
 
-Organization Users are one of the most important parts of PublicBacklog. They're your users! The same users who will ultimately be providing the feedback to make your product or service better.
+Organization Users are the people giving feedback to improve your product or service.
 
-They come in two flavors **Users** and **Admins**.
+There are two roles: **Users** and **Admins**.
 
-Users are able to acess any of the data that is presented under the `_feedback` section of the website.
+**Users** can access all content under the `_feedback` section.
 
-Admins have full access to the admin section, approving tickets, modifying roadmaps, making announcements ect.
+**Admins** have full access to the admin interface, including ticket approval, roadmap updates, announcements, and more.
+
 
 ### Adding Organization Users
 
 #### Public Backlogs
 
-By default a user is able to join a public backlog without any interaction from an admin.
+By default, users can join a public Backlog without admin approval.
+
 
 #### Private Backlogs
 
 <div class="pb-warning">
     <i class="material-icons" style="font-size: 24px;">warning</i>
     <p style="margin-left: 10px;">
-        Backlogs are by default <strong style="color: #92400e">public</strong>, you can change this in the Organization Settings
+        Backlogs are <strong style="color: #92400e">public</strong> by default. You can change this in Organization Settings.
    </p> 
 </div>
 
-If your backlog is set to private you have two options for allowing users to submit feedback depending on your PublicBacklog integration method.
+If your Backlog is private, you have two options for allowing users to submit feedback, depending on your PublicBacklog integration method.
 
 #### With the &nbsp; [Simple Setup]()
 
-The simple setup gives you more limited options when allowing user feedback. In your [Organization User Management]() section of your backlog you'll find two buttons. Upload and Download.
+The Simple Setup offers limited control over who can give feedback.
 
-Start by clicking the Download button.
+In the [Organization User Management]() section of your Backlog, you'll find two buttons: **Upload** and **Download**.
+
+Start by clicking **Download**.
 
 ![1728261282089](image/README/1728261282089.png)
 
-You may also download it from [here](https://api.publicbacklog.com/files/user-template)
+You can also download the template directly from [here](https://api.publicbacklog.com/files/user-template).
 
-Please populate this with the users that you wish to allow access to give feedback on any backlog in the organization.
+Populate the file with users you want to grant feedback access to across all Backlogs in the Organization.
 
-The only required field is the email field. It is used as a unique identifier for the organization user but the first and last names will be auto-filled with the backlog name as the first name and User as the last name if neither are provided. You may also provide just a first name if you choose, and the last name will be left blank.
+Only the **email** field is required. It serves as the unique identifier. If **first** and **last names** are omitted, the system uses the Backlog name as the first name and “User” as the last name. You can also supply only a first name; in that case, the last name will be left blank.
 
-Then upload these users via the upload users button
+After filling out the template, upload it using the **Upload Users** button.
+
 
 ![1728261931930](image/README/1728261931930.png)
 
-Once the users are uploaded an email will be sent to the user asking them to confirm that they wish to receive email communication from us. Regardless of that they will immediately be able to access any backlog within the organization and leave feedback on them.
+Once uploaded, users will receive an email asking them to confirm if they want to receive communications. Regardless of their response, they will immediately gain access to all Backlogs in the Organization and can leave feedback.
 
-These users are given basic acess to the feedback section of your backlogs.
+These users have basic access to the feedback sections only. They cannot access the admin interface.
 
-Beyond that they are locked out of the admin portion
 
 #### With the &nbsp; [Advanced Setup]()
 
-The Advanced setup gives you the most felxability in terms of setting up users who you want to give feedback. This method does require a higher degree of code integration and testing on your part. But if a private Backlog is the route you want to take this is the best way to do that.
+The Advanced Setup provides the most flexibility for managing users who can give feedback. It requires deeper code integration and testing on your end. If you're using private Backlogs, this is the recommended approach.
 
-We do offer an api endpoint to add an organization user. This endpoint is only capable of adding a rengular user **not** an admin. Adding a user through this endpoint will immediately allow them to start interacting with your private Backlogs on redirect.
+An API endpoint is available to add an Organization user. This endpoint only supports adding regular users—not admins. Users added through this method can immediately interact with private Backlogs after redirect.
 
-You can explore the endpoint documentation [here](/api/?id=add-organization-user)
+View the endpoint documentation [here](/api/?id=add-organization-user).
+
 
 #### Adding an adiminstrator
 
-Many organizations want more than one person to manage organizations. While an organization can only have one owner it can have any number of administrators.
+Many organizations require multiple people to manage operations. While each Organization can have only one owner, it can have a limited number of administrators based on the Organization subscription tier.
 
-To add a new administrator to an organization go to the User section of the Organization Settings. You'll find in button gorup in the top right a button to add administrators.
+To add an administrator, go to the **User** section in **Organization Settings**. In the top-right button group, click **Add Administrator**.
+
 
 ![1728263011933](image/README/1728263011933.png)
 
 ![1728263198009](image/README/1728263198009.png)
 
-Enter in your admin's email and they will be sent a link to accept the invitation.
+Enter the admin's email address to send them an invitation link.
 
-Unlike a regular organization user, an admin user will need to confirm their email before they are able to sign in and perform any actions on the orgnization or backlogs.
+Admin users must confirm their email before they can sign in or perform any actions within the Organization or its Backlogs.
+
 
 ### Removing Users
 
-If you find yourself needing to remove a user from a backlog for whatever reason you can accomplish this easily.
+To remove a user from a Backlog, go to the **User Management** section, select the user, click the **ellipsis** button at the top, and choose **Remove User**.
 
-All you need to do is select a user from the User Management section then click the elipses at the top and you will see the remove user option. This performs a soft delete on the user disallowing them to rejoin the organization after removal.
+This performs a soft delete, preventing the user from rejoining the Organization.
 
 ![1728353625542](image/README/1728353625542.png)
 
 ### Readding Deleted Users
 
-To readd a deleted user you can use one of two methods. 
+To re-add a deleted user:
+- For an **Admin**, use the **Add Admin** button. No email confirmation is required.
+- For a **regular user**, use the **Upload Users** functionality. Email confirmation is not required.
 
-If it is an Admin you're trying to add back simply use the Add Admin button. This will not require them to accept the invitation again via an email link.
-
-If it is a regular user you're looking to add you can use the Upload Users functionality to readd them. They will also not be required to accep the invitation via email.

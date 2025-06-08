@@ -23,4 +23,10 @@
 
 **Tickets**
  - [What is a ticket?](/tickets/?id=what-is-a-ticket)
+ - [User View](/tickets/?id=user-view)
+ - [Admin View](/tickets/?id=admin-view)
+ - [Export](/tickets/?id=export)
+ - [Tags](/tickets/?id=tags)
+ - [Roadmaps](/tickets/?id=roadmaps)
+ - [Votes](/tickets/?id=votes)
  </div>
