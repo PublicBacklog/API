@@ -1,11 +1,11 @@
-### What is a Roadmap?
+### Overview
 A Roadmap provides a quick view of the overall status of Tickets in a Backlog.
 
 Roadmaps are tied to their associated Backlog.
 
 The [statuses]() used in Roadmaps are **Approved**, **In Development**, and **Done**.
 
-#### Creating a Roadmap
+### Creating a Roadmap
 
 Creating a Roadmap takes just a few clicks.
 
@@ -21,7 +21,7 @@ When saved, a check runs to see if a roadmap already exists:
 
 ![Create Roadmap Modal](image-1.png)
 
-#### Add a Ticket to a Roadmap
+### Add a Ticket to a Roadmap
 Adding a Ticket to a Roadmap is automatic. When a ticket moves from **New** to **Approved**, it’s added to the Backlog’s default roadmap if one exists.
 
 For older tickets, go to the **Roadmap** tab in the [Admin Ticket View]() to manually add them.
@@ -33,7 +33,7 @@ For older tickets, go to the **Roadmap** tab in the [Admin Ticket View]() to man
 Tickets can be part of multiple roadmaps but are only shown in the default roadmap in the [User view]().
 ![Multi-roadmap Ticket](image-4.png)
 
-#### Remove a Ticker from a Roadmap
+### Remove a Ticker from a Roadmap
 
 There are two ways to remove a ticket from a Roadmap:
 

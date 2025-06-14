@@ -122,35 +122,61 @@
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet" />
+  <style>
+    /* Basic sidebar styles */
+    .sidebar-nav {
+      margin-top: 1rem;
+    }
+
+    /* Default state - show main sections and second level */
+    .sidebar-nav>ul {
+      display: block !important;
+    }
+
+    .sidebar-nav>ul>li>ul {
+      display: block !important;
+    }
+
+    /* Hide third level by default */
+    .sidebar-nav>ul>li>ul>li>ul {
+      display: none !important;
+    }
+
+    /* Show third level ONLY when parent is active */
+    .sidebar-nav>ul>li>ul>li.active>ul,
+    .sidebar-nav a.active+ul {
+      display: block !important;
+    }
+
+    /* Indentation for better readability */
+    .sidebar-nav li>a+ul {
+      margin-left: 0.5rem;
+    }
+
+    .sidebar-nav ul ul li>a+ul {
+      margin-left: 1rem;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      // name: 'Public Backlog',
       loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
       alias: {
-        '/.api': '/api/_sidebar.md',
-        '/.definitions': '/definitions/_sidebar.md',
-        '/.organization-users': '/organization-users/_sidebar.md',
-        '/.quick-start-easy': '/quick-start-easy/_sidebar.md',
-        '/.organizations': '/organizations/_sidebar.md',
-        '/.backlogs': '/backlogs/_sidebar.md',
-        '/.github': '/github/_sidebar.md',
-        '/.tickets': '/tickets/_sidebar.md',
-        '/.roadmaps': '/roadmaps/_sidebar.md',
+        '/.*/_sidebar.md': '/_sidebar.md'
       },
-      // logo: '/assets/white_bg_pb_logo.svg',
-      // repo: 'API'
       tabs: {
-        persist: true,      // default
-        sync: true,      // default
-        theme: 'classic', // default
-        tabComments: true,      // default
-        tabHeadings: true       // default
-      },
-    }
+        persist: true,
+        sync: true,
+        theme: 'classic',
+        tabComments: true,
+        tabHeadings: true
+      }
+    };
   </script>
 
   <!-- Docsify v4 -->
@@ -159,6 +185,67 @@
   <script src="https://unpkg.com/docsify-copy-code@2"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
   <script src="//unpkg.com/docsify-material-icons/dist/docsify-material-icons.min.js"></script>
+  <script>
+    // After Docsify is fully loaded and rendered
+    window.addEventListener('load', function () {
+      // Initial setup - hide all third-level menus
+      document.querySelectorAll('.sidebar-nav > ul > li > ul > li > ul').forEach(function (ul) {
+        ul.style.display = 'none';
+      });
+
+      // Find active items and show their submenus
+      const activeItems = document.querySelectorAll('.sidebar-nav li.active');
+      activeItems.forEach(function (item) {
+        const sublist = item.querySelector('ul');
+        if (sublist) {
+          sublist.style.display = 'block';
+        }
+      });
+
+      // Also show submenus of active links
+      const activeLinks = document.querySelectorAll('.sidebar-nav a.active');
+      activeLinks.forEach(function (link) {
+        if (link.nextElementSibling && link.nextElementSibling.tagName === 'UL') {
+          link.nextElementSibling.style.display = 'block';
+        }
+      });
+
+      // When a link is clicked
+      document.querySelectorAll('.sidebar-nav a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          // Don't immediately hide menus - let Docsify handle the navigation
+          // and active states first, then our load handler will take care of it
+        });
+      });
+    });
+
+    // This function runs when route changes
+    window.$docsify.plugins = [].concat(function (hook) {
+      hook.doneEach(function () {
+        // Hide all third-level menus
+        document.querySelectorAll('.sidebar-nav > ul > li > ul > li > ul').forEach(function (ul) {
+          ul.style.display = 'none';
+        });
+
+        // Show submenus of active items
+        const activeItems = document.querySelectorAll('.sidebar-nav li.active');
+        activeItems.forEach(function (item) {
+          const sublist = item.querySelector('ul');
+          if (sublist) {
+            sublist.style.display = 'block';
+          }
+        });
+
+        // Also show submenus of active links
+        const activeLinks = document.querySelectorAll('.sidebar-nav a.active');
+        activeLinks.forEach(function (link) {
+          if (link.nextElementSibling && link.nextElementSibling.tagName === 'UL') {
+            link.nextElementSibling.style.display = 'block';
+          }
+        });
+      });
+    }, window.$docsify.plugins);
+  </script>
 </body>
 
 </html>

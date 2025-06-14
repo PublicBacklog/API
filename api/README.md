@@ -1,4 +1,4 @@
-# Public Backlog API Documentation
+### Overview
 
 These are the docs for our API which you can access at https://api.publicbacklog.com
 

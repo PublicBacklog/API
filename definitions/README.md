@@ -1,5 +1,3 @@
-## Type definitions
-
 ### Ticket types
 
 PublicBacklog defines two primary ticket types. The differences between them are mostly visual and for tracking purposes.

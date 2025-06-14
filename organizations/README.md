@@ -1,4 +1,4 @@
-### What is an Organization?
+### Overview
 
 An Organization represents you—it can be a single user or a group within a company. Each Organization has one owner and can have multiple admins.
 

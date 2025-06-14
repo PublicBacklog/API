@@ -1,4 +1,4 @@
-## PublicBacklog Organization Users
+### Overview
 
 Organization Users are the people giving feedback to improve your product or service.
 

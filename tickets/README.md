@@ -1,4 +1,4 @@
-### **What is a ticket?**
+### Overview
 
 A ticket is the core unit of feedback in PublicBacklog. Both you and your users create and use tickets to track input.
 
@@ -6,11 +6,11 @@ All tickets receive a sequential numeric ID starting at **1**. These IDs are uni
 
 Tickets have two viewing modes: **User** view and **Admin** view.
 
-#### **User View**
+#### User View
 
 The user view is what most users will see. It’s primarily read-only, with input limited to the want/indifferent/do not want voting section and the ability to add or reply to comments.
 
-#### **Admin View**
+#### Admin View
 
 The admin view provides full control over a ticket—title, description, tags, files, status, and more.
 
@@ -18,7 +18,7 @@ This is the default view when accessing tickets from the main dashboard. From th
 
 Below are the individual components of the admin view
 
-#### **Export**
+### Export
 
 Tickets connect with external systems through their [integrations](/).
 
@@ -32,7 +32,7 @@ _More to come..._
 
 Additional integrations for features like notifications are available here.
 
-#### Tags
+### Tags
 
 Tags help categorize and organize tickets. They are free-form and can contain any text including symbols.
 
@@ -40,7 +40,7 @@ Tags are searchable via filters on the `_tickets` page.
 
 By default, tags are hidden in the **user** view. This can be changed in Organization settings if you want to use tags to reflect a status outside the standard ticket status field.
 
-#### Roadmaps
+### Roadmaps
 
 Roadmaps give users a quick view of ticket status within your Backlogs.
 
@@ -54,7 +54,7 @@ You can also manually add tickets to roadmaps. If a ticket is in **New** status,
 
 Find out more about Roadmaps [here](/roadmaps/).
 
-#### Votes
+### Votes
 
 Votes let users quickly express their opinion on a ticket using one of three options:
 
