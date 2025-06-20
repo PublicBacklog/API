@@ -12,18 +12,19 @@
 
 - **Quick Start**
   - [Quick Start easy](/quick-start-easy/)
-- **API**
-  - [API Key](/api-key/)
-  - [Endpoints](/api/?id=public-backlog-api-documentation)
-  - [Type Definitions](/definitions/)
 - **Knowledge Center**
   - [Organizations](/organizations/)
+  - [Organization Settings](/organization-settings/)
   - [Organization Users](/organization-users/)
   - [Backlogs](/backlogs/)
   - [Tickets](/tickets/)
   - [Roadmaps](/roadmaps/)
   - [Announcements](/announcements/)
   - [Notifications](/notifications/)
+- **API**
+  - [API Key](/api-key/)
+  - [Endpoints](/api/?id=public-backlog-api-documentation)
+  - [Type Definitions](/definitions/)
 - **Integrations**
   - [Github](/github/)
   - [Jira](/jira/)

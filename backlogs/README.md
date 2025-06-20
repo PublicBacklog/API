@@ -3,7 +3,7 @@
 A Backlog in PublicBacklog is where you collect targeted feedback. Use Backlogs to represent different products, services, or even specific sections of a single product for more granular control.
 
 
-[Organizations]() own Backlogs. 
+[Organizations](/organizations/) own Backlogs. 
 
 The **Free** tier allows 1 Backlog, **Starter** allows 3, and both **Business** and **Enterprise** tiers allow unlimited Backlogs.
 

@@ -23,6 +23,6 @@ To change your API key, go to API Configuration in Organization Settings and cli
 
 ![1728447630246](image/README/1728447630246.png)
 
-#### Examples
+### Example Usage
 
 For examples on how to include your API key in requests head to the [Endpoints Documentation](/api/?id=public-backlog-api-documentation)
